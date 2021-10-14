@@ -1,13 +1,26 @@
 .header-container {
-  border: 1px solid red;
   .navbar-container {
     display: flex;
-    .logo {
-      width: 95px;
-      height: 40px;
-    }
-    .nav-list {
+    justify-content: space-between;
+    .left-column {
+      border: 1px solid red;
+      width: 40%;
       display: flex;
+      .logo {
+        width: 95px;
+        height: 40px;
+      }
+      .nav-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+    .right-column {
+
     }
   }
 

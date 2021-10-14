@@ -1,9 +1,13 @@
 <div class="header-container">
   <div class="navbar-container">
-    <img class="logo" src="../../../assets/images/disney_logo_dark@2x-45d70f7dd57b.png" alt="">
-    <ul class="nav-list">
-      <li *ngFor="let navitem of menuListService.menuList">{{navitem.option}}</li>
-    </ul>
+    <div class="left-column">
+      <img class="logo" src="../../../assets/images/disney_logo_dark@2x-45d70f7dd57b.png" alt="">
+      <ul class="nav-list">
+        <li *ngFor="let navitem of menuListService.menuList">{{navitem.option}}</li>
+      </ul>
+    </div>
+    <div class="right-column">
+     <div class="search"></div>
+    </div>
   </div>
-  <div class="search"></div>
 </div>
