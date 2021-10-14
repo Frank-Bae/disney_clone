@@ -1,1 +1,9 @@
-<p>header works!</p>
+<div class="header-container">
+  <div class="menu-container">
+    <img class="logo" src="../../../assets/images/disney_logo_dark@2x-45d70f7dd57b.png" alt="">
+    <ul>
+      <li *ngFor="let navitem of menuListService.menuList">{{navitem.option}}</li>
+    </ul>
+  </div>
+  <div class="search"></div>
+</div>
