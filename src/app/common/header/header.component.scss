@@ -1,7 +1,14 @@
 .header-container {
   border: 1px solid red;
-  .logo {
-    width: 95px;
-    height: 40px;
+  .navbar-container {
+    display: flex;
+    .logo {
+      width: 95px;
+      height: 40px;
+    }
+    .nav-list {
+      display: flex;
+    }
   }
+
 }
