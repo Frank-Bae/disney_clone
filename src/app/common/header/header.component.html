@@ -1,13 +1,17 @@
 <div class="header-container">
   <div class="navbar-container">
     <div class="left-column">
-      <img class="logo" src="../../../assets/images/disney_logo_dark@2x-45d70f7dd57b.png" alt="">
       <ul class="nav-list">
-        <li *ngFor="let navitem of menuListService.menuList">{{navitem.option}}</li>
+        <li><img class="logo" src="../../../assets/images/disney_logo_dark@2x-45d70f7dd57b.png" alt=""></li>
+        <li class="li-{{i}}" *ngFor="let navitem of displayMenuList; let i = index">{{navitem.option}}</li>
       </ul>
     </div>
     <div class="right-column">
-     <div class="search"></div>
+     <div class="search">
+       test
+     </div>
     </div>
   </div>
 </div>
+  <p>Window width: <strong>{{ getScreenWidth }}</strong></p>
+  <p>Window height: <strong>{{ getScreenHeight }}</strong></p>

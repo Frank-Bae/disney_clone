@@ -4,24 +4,26 @@
     justify-content: space-between;
     .left-column {
       border: 1px solid red;
-      width: 40%;
+      width: 80%;
       display: flex;
       .logo {
         width: 95px;
         height: 40px;
       }
       .nav-list {
-        width: 100%;
+        border: 1px solid blue;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
         font-weight: 700;
         font-size: 14px;
+        li {
+          padding: 12px 18px;
+        }
       }
     }
     .right-column {
-
+      width: 400px;
+      border: 1px solid grey;
     }
   }
-
 }
