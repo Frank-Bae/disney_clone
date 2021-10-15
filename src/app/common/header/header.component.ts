@@ -49,12 +49,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
+    this.onWindowResize()
   }
 
   @HostListener('window:resize', ['$event'])
 
   onWindowResize() {
-    const originalList = this.originalList
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
     if (this.getScreenWidth < 823) {
